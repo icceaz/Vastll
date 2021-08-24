@@ -1,0 +1,98 @@
+{
+  "name": "Vastll",
+  "author": "留个名字",
+  "desc": "Vastll导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
+  "date": "2021-08-24 15:07:22",
+  "list": [
+    {
+      "name": "文章视屏",
+      "type": "cron",
+      "time": "20 10 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zqwz.js"
+      }
+    },
+    {
+      "name": "签到",
+      "type": "cron",
+      "time": "16 6  * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zqqd.js"
+      }
+    },
+    {
+      "name": "中青每日收益",
+      "type": "cron",
+      "time": "5 9 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zq_today_score.js"
+      }
+    },
+    {
+      "name": "看看赚",
+      "type": "cron",
+      "time": "38 7-23/8 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zqkkz.js"
+      }
+    },
+    {
+      "name": "每日任务奖励",
+      "type": "cron",
+      "time": "0 7,17 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zqbox.js"
+      }
+    },
+    {
+      "name": "自动提现",
+      "type": "cron",
+      "time": "0 9 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zq_withdraw.js"
+      }
+    },
+    {
+      "name": "火爆转发",
+      "type": "cron",
+      "time": "25 10 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zq_share.js"
+      }
+    },
+    {
+      "name": "转盘抽奖",
+      "type": "cron",
+      "time": "15 7,12,23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zq_Rotary.js"
+      }
+    },
+    {
+      "name": "好友签到红包",
+      "type": "cron",
+      "time": "0 1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zq_friendSign.js"
+      }
+    },
+    {
+      "name": "福利视屏",
+      "type": "cron",
+      "time": "20 10 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zq_Adv_video.js"
+      }
+    },
+  ]
+}
