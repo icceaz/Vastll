@@ -94,6 +94,68 @@
         "target": "zq_Adv_video.js"
       }
     },
+    {
+      "name": "晶彩转盘抽奖",
+      "type": "cron",
+      "time": "16 12,19 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jc_Rotary.js"
+      }
+    },
+    {
+      "name": "自动提现",
+      "type": "cron",
+      "time": "40 9 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jc_withdraw.js"
+      }
+    },
+    {
+      "name": "晶彩宝箱奖励",
+      "type": "cron",
+      "time": "10 9 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jcbox.js"
+      }
+    },
+    {
+      "name": "晶彩看看赚",
+      "type": "cron",
+      "time": "10 7,22 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jckkz.js"
+      }
+    },
+    {
+      "name": "晶彩文章",
+      "type": "cron",
+      "time": "30 6,10,15,20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jcwz.js"
+      }
+    },
+    {
+      "name": "晶彩签到",
+      "type": "cron",
+      "time": "25 10 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jcqd.js"
+      }
+    },
+    {
+      "name": "红包",
+      "type": "cron",
+      "time": "*/10 * * * *",
+      "job": {
+        "type": "runjs",
+        "target": "hbsp.js"
+      }
     }
   ]
 }
